@@ -1,0 +1,19 @@
+.card-home{
+
+    height: 120px;
+}
+
+.card-home > a >.card-body > .card-text{
+
+    margin-top: 27px;
+}
+
+.a-custom{
+
+    color: #ffffff;
+}
+
+.a-custom:hover{
+
+    text-decoration: none;
+}
