@@ -4,21 +4,17 @@
 <div class="row justify-content-center">
     <div class="col-md-2">
         <div class="list-group mt-3">
-            <a href="#" class="list-group-item list-group-item-action">
-                Link
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-                Link
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-                Link
-            </a>
+            @foreach($links as $link)
+                <a href="{{$link->link}}" class="list-group-item list-group-item-action">
+                    {{$link->name}}
+                </a>
+            @endforeach
         </div>
     </div>
     <div class="col-md-10">
         <div class="row">
             <div class="card card-home text-white bg-primary col-md-3 m-3">
-                <a href="" class="a-custom">
+                <a href="{{route('pessoas.index')}}" class="a-custom">
                     <div class="card-body">
                         <h4 class="card-text text-center">
                             Pessoa
@@ -47,7 +43,7 @@
         </div>
         <div class="row">
             <div class="card card-home text-white bg-primary col-md-3 m-3">
-                <a href="" class="a-custom">
+                <a href="{{route('unisharp.lfm.show')}}" target="_blank" class="a-custom">
                     <div class="card-body">
                         <h4 class="card-text text-center">
                             Ger. Arquivo
@@ -65,7 +61,7 @@
                 </a>
             </div>
             <div class="card card-home text-white bg-primary col-md-3 m-3">
-                <a href="" class="a-custom">
+                <a href="{{route('links.index')}}" class="a-custom">
                     <div class="card-body">
                         <h4 class="card-text text-center">
                             Links
@@ -76,7 +72,7 @@
         </div>
         <div class="row">
             <div class="card card-home text-white bg-primary col-md-3 m-3">
-                <a href="" class="a-custom">
+                <a href="{{route('audiencias.index')}}" class="a-custom">
                     <div class="card-body">
                         <h4 class="card-text text-center">
                             Audiencias
